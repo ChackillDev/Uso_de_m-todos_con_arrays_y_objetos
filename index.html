@@ -79,10 +79,20 @@ document.write('<h3>Paciente Isapre dental </h3>');
 let pacienteIsapre= dental.filter(pacDental=>{
     return pacDental.prevision === "ISAPRE";
 })
-console.log(pacienteIsapre);
 pacienteIsapre.forEach(pacIsapre=>{
     document.write(`<p>${pacIsapre.paciente}--${pacIsapre.prevision} </p>`)
 })
+/* 
+6.-Filtrar aquellos pacientes que indican ser de FONASA en la lista de consultas médicas
+de Traumatología */
+document.write('<h3>Paciente Fonasa Traumatología </h3>');
+let pacienteFonasa= traumatologia.filter(pacTrauma=>{
+    return pacTrauma.prevision === "FONASA";
+})
+pacienteFonasa.forEach(pacFonasa=>{
+    document.write(`<p>${pacFonasa.paciente}--${pacFonasa.prevision} </p>`)
+})
+
 
 document.write('<h3>Cantidad de atenciones </h3>');
 
